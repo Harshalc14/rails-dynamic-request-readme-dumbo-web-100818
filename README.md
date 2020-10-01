@@ -69,9 +69,9 @@ end
 Running `rspec` gives us an expected error of: `ActionController::RoutingError: No route matches [GET] "/posts/1"`. To correct this error, let's draw a route in
 _config/routes.rb_ that maps to a show action in the PostsController:
 
-```ruby
+````ruby
 get 'posts/:id', to: 'posts#show'
-```
+````
 
 Here you will notice something that's different from the static route. The
 `/:id` tells the routing system that this route can receive a parameter and that
